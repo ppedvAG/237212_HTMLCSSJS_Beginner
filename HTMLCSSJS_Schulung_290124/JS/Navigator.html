@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+</head>
+<body>
+    <script>
+
+        // Navigator - Objekt
+
+        //appCodeName 
+        document.write(navigator.appCodeName + "<br>");
+
+        // appName
+        document.write(navigator.appName + "<br>");
+
+        // appVersion
+        document.write(navigator.appVersion + "<br>");
+
+        // userAgent => Browserbezeichnung wieder
+        document.write(navigator.userAgent + "<br>");
+
+        // platform => Gibt Betriebssystem wieder
+        document.write(navigator.platform + "<br>");
+
+        // language
+        document.write(navigator.language + "<br>");
+
+        // plugins
+        document.write(navigator.plugins + "<br>");
+
+        // Methoden
+        document.write(navigator.javaEnabled() + "<br>");
+
+        // Screen - Objekt
+        document.write("Bildschirm Hoehe: " + screen.height + "px <br>");
+        document.write("Bildschirm Weite: " + screen.width + "px <br>");
+
+        // Wirkliche Flaeche
+        document.write("Wirkliche Hoehe: " + screen.availHeight + "px <br>");
+        document.write("Wirkliche Breite: " + screen.availWidth + "px <br>");
+        
+        function Zeitvorbei() {
+            alert("Die Zeit ist um!");
+        }
+
+        window.setTimeout("Zeitvorbei()", 5000);
+
+        // Window.prompt
+        var promptTest = window.prompt("Geb deinen Namen ein!");
+
+        // Window confirm
+        var confirmTest = window.confirm("Bestätige!");
+
+        // Location
+        // protocol
+        document.write(location.protocol + "<br>");
+
+        // hostname
+        document.write(location.hostname + "<br>");
+        
+        // hash 
+        document.write(location.hash + "<br>");
+
+    </script>
+</body>
+</html>

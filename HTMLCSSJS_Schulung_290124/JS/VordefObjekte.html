@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vordefinierte Objekte</title>
+</head>
+<body>
+    <script>
+
+        // Vordefinierte Objekte
+        var zitat = "Sein oder nicht sein,";
+        document.write(zitat.charAt(6) + "<br>");
+        document.write(zitat.indexOf('c') + "<br>");
+        document.write(zitat.concat(" das ist hier die Frage <br>"));
+
+        // Mathematische Konstanten
+        document.write(Math.PI + "<br>");
+        // Mathematische Funktion
+        document.write(Math.random() + "<br>");
+
+        // Datumsobjekt
+        const d = new Date("2024-01-31");
+        document.write(d + "<br>");
+
+        // getDate()
+        document.write(d.getDate() + "<br>");
+
+        // getDay()
+        document.write(d.getDay() + "<br>");
+
+        // getHours
+        document.write(d.getHours() + "<br>");
+
+        // getMinutes()
+        document.write(d.getMinutes() + "<br>");
+
+        // getMonth()
+        document.write(d.getMonth() + "<br>");
+
+        // getTime()
+        document.write(d.getTime() + "<br>");
+
+        // getTimezoneOffset()
+        document.write(d.getTimezoneOffset() + "<br>");
+
+        // getFullYear()
+        document.write(d.getFullYear() + "<br>");
+    </script>
+
+    <p id="year"></p>
+    <p id="month"></p>
+    <p id="date"></p>
+    <p id="hours"></p>
+    <p id="minutes"></p>
+    <p id="seconds"></p>
+    <p id="time"></p>
+
+    <script>
+        const set = new Date();
+
+        // setFullYear()
+        set.setFullYear(2020);
+        document.getElementById("year").innerHTML = set;
+
+        // setMonth(Monat)
+        set.setMonth(3);
+        document.getElementById("month").innerHTML = set;
+
+        // setDate(Tag) => Aendert den Tag des Monats
+        set.setDate(27);
+        document.getElementById("date").innerHTML = set;
+        
+        // ....
+
+
+    </script>
+</body>
+</html>

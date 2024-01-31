@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Schulung</title>
+    <style>
+
+        .paragraph-style {
+            color: red;
+        }
+
+        #headline {
+            color: green;
+        }
+
+        table, tr, td, th {
+            /* Zwischenraum der Tabellen auf "Überlappend" */
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Kommentar -->
+    <!-- 
+        Das ist ein
+        mehrzeiliger
+        Kommentarblock
+     -->
+    <p class="paragraph-style">Hallo Welt!</p>
+    <p class="paragraph-style">Willkommen!</p>
+    <br>
+    <h1 id="headline">Meine Überschrift</h1>
+
+    <p>Ich habe zum Beispiel 1000&euro;</p>
+
+    <!-- <h1></h1>
+    <html>
+    <head></head>
+    <body>
+        
+    </body>
+    </html> -->
+
+    <h1>Hallo</h1>
+    <h2>Hallo</h2>
+    <h3>Hallo</h3>
+    <h4>Hallo</h4>
+    <h5>Hallo</h5>
+    <h6>Hallo</h6>
+
+    <a href="zweiteSeite.html">Hier gehts zur zweiten Seite</a>
+
+    <!-- Nummerierte Liste -->
+    <ol>
+        <li>Erstes</li>
+        <li>Zweites</li>
+        <li>Drittes</li>
+    </ol>
+
+    <!-- Aufzählungsliste -->
+    <ul>
+        <li>Erstes</li>
+        <li>Zweites</li>
+        <li>Drittes</li>
+    </ul>
+
+    <!-- Tabelle -->
+    <table>
+        <tr>
+            <th>Erstes</th>
+            <th>Zweite</th>
+            <th>Dritte</th>
+        </tr>
+
+        <tr>
+            <td>Test1</td>
+            <td>Test2</td>
+            <td>Test3</td>
+        </tr>
+
+        <tr>
+            <td>Fußzeile1</td>
+            <td>Fußzeile2</td>
+            <td>Fußzeile3</td>
+        </tr>
+    </table>
+
+    <br>
+    <!-- Fettgedruckt haben -->
+    <b>Fettgedruckter Text</b><br>
+    <strong>Fettgedruckter Text</strong><br>
+
+    <!-- Kursiven Text -->
+    <i>Kursiver Text</i><br>
+
+    <!-- durchgestrichenen Text -->
+    <s>Hallo</s><br>
+
+    <!-- Kleiner Text -->
+    <small>Kleiner Text</small>
+
+    <!-- Bild einbinden -->
+    <img src="https://picsum.photos/id/237/200/300" alt="Bild mit Hund" height="200" width="100">
+
+        <!-------------------------------->
+    <!-- Erstelle eine Tabelle, mit 4 Zeilen und jeweils 2 Zellen -->
+    <!-- Mindestens einbinde:
+        1x Bild
+        1x Geordnete (Nummerierte) Liste!
+        2x Paragraphe
+        1x Kopfzeile
+    -->
+
+    <!-- Tipps -->
+    <!-- 
+        4 Zeilen = 4x <tr>
+        2 Zellen = 2x <td> in <tr>
+     -->
+
+     <!-- Weitere Tipps
+     <table>
+
+        -- Erste Zeile --
+        <tr>
+            -- <img> -- 
+            <td></td>
+            -- <p> --
+            <td></td>
+        </tr>
+
+        -- Zweite Zeile --
+        <tr>
+            -- <ol> --
+            <td></td>
+            -- <p> --
+            <td></td>
+        </tr>
+
+        -- Dritte Zeile --
+        <tr>
+            -- <h1> --
+            <td></td>
+            -- <p> --
+            <td></td>
+        </tr>
+
+        -- Vierte Zeile --
+        <tr>
+            -- <p> --
+            <td></td>
+            -- <p> --
+            <td></td>
+        </tr>
+
+     </table> -->
+
+    <br><br>
+
+     <!-- Formular -->
+     <form method="#" action="#">
+        <label>Vornamen:</label>
+        <input type="text" name="vornamen"><br>
+
+        <label>Nachnamen:</label>
+        <input type="text" name="nachnamen" required><br>
+
+        <label>Passwort:</label>
+        <input type="password" name="password"><br>
+
+        <label>Checkbox</label>
+        <input type="checkbox" name="A" checked>Banane
+        <input type="checkbox" name="B">Apfel
+        <input type="checkbox" name="C">Gurke
+
+        <label>Radiobutton</label>
+        <input type="radio" name="TestA">Hallo
+        <input type="radio" name="TestA">Welt!
+        <input type="radio" name="TestA">Schule
+
+        <!-- Absende-Button -->
+        <input type="submit" value="Absenden!" name="absenden">
+        <!-- Zuruecksetzen-Button -->
+        <input type="reset" value="Zurücksetzen" name="zuruecksetzen">
+     </form>
+
+
+</body>
+</html>

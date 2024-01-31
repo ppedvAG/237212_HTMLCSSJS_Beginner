@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+        // Array erzeugen (1)
+        var bundesliga = new Array(); // leeres Feld
+
+
+        //    0      1     2     3 
+        // [Hallo, Test, Zwei, Drei]
+        // Befuellen
+        bundesliga[1] = 100;
+        bundesliga[4] = "Dortmund";
+
+        // Array ausgeben
+        document.write(bundesliga[1]);
+        document.write(bundesliga[4]);
+
+        // Zeilenumbruch
+        document.write("<br>");
+
+        // Option 2
+        var stadt = new Array(4); // Array mit 4 Elementen
+
+        stadt[0] = "Berlin";
+        stadt[1] = "Wien";
+        stadt[2] = "Burghausen";
+        stadt[3] = "München";
+
+        document.write("<br>");
+
+        // Option 3
+        var Laender = ["Deutschland", "Polen", "Italien", "Frankreich"];
+
+        document.write(Laender[0], Laender[1], Laender[2], Laender[3]);
+
+        document.write("<br>");
+
+        // Assoziative Arrays(4)
+        var Stadt = new Array();
+        
+        Stadt["Wohnort"] = "Burghausen";
+        Stadt["Name"] = "Max Mustermann";
+
+        // Ausgabe
+        document.write(Stadt["Wohnort"]);
+        document.write(Stadt["Name"]);
+        // ODER
+        var Wohnort = Stadt["Wohnort"];
+        var Name = Stadt["Name"];
+        
+        document.write(Wohnort);
+        document.write(Name);
+
+        document.write("<br>");
+
+        // toString()
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let string = fruits.toString();
+        document.write(string);
+
+        document.write("<br>");
+        // length
+        let laenge = fruits.length;
+        document.write(laenge);
+
+        document.write("<br>");
+        // join()
+        let join = fruits.join(" * ");
+        document.write(join);
+
+
+        document.write("<br>");
+        // pop()
+        let pop = fruits.pop()
+        document.write(pop);
+
+        document.write("<br>");
+        // push()
+        let push = fruits.push("Kiwi");
+        document.write(push);
+
+        document.write("<br>");
+        //concat() - 2x oder mehrere Arrays zusammenfuegen
+        const Girls =  ["Cecilie", "Lone"];
+        const Boys = ["Tom", "Daniel", "Tobias"];
+
+        // Ausgeben
+        const GirlsBoys = Girls.concat(Boys);
+        document.write(GirlsBoys);
+
+        // Kleine Aufgabe:
+        // 3x Arrays zusammenfuegen
+
+        document.write("<br>");
+        // reverse()
+        const reversedArray = fruits.reverse();
+        document.write(reversedArray);
+
+    </script>
+</body>
+</html>
